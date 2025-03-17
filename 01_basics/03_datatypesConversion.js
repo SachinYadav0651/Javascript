@@ -82,7 +82,7 @@ booleanIsLoggedIn = Boolean(isloggedIn)
 console.log(typeof booleanIsLoggedIn);
 console.log(booleanIsLoggedIn);           // true
 
-*/
+
 
 let someNbr = 123
 
@@ -113,6 +113,57 @@ someNbr = undefined
 stringSomeNbr = String(someNbr)
 console.log(typeof stringSomeNbr);
 console.log(stringSomeNbr);      // undefined
+
+*/
+
+let value = 2
+let negValue = -value // -2
+console.log(negValue);
+
+// console.log(2+2);  // 4
+// console.log(2-2);  // 0
+// console.log(2*2);  // 4
+// console.log(2**3); // 8
+// console.log(2/3);  // 0.67
+// console.log(2%3);  // 2
+
+let str1 = "Sachin"
+let str2 = " Yadav"
+let str3 = str1 + str2;
+
+console.log(str3);
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + 2 + 3);
+console.log(1 + 2 + "3");
+console.log((1 + 2) * 5 % 3);
+console.log(+true);
+// console.log(true+); // wrong expression
+console.log(+"");
+
+let num1, num2, num3
+
+num1 = num2 = num3 = 2 + 3
+
+let gameCounter = 10
+gameCounter++;              // 11
+console.log(gameCounter++); // 11 first will print the value thn increment to 12
+console.log(gameCounter);   // 12
+
+
+++gameCounter;               // 13
+console.log(gameCounter);    // 13
+console.log(gameCounter++);  // print 13 thn increment to 14
+console.log(++gameCounter);  // 15
+
+
+
+
+
+
+
+
 
 
 
