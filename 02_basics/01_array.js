@@ -94,15 +94,36 @@ const myArr = new Array(1,2,3,56,98)
 
 // Sorting
 // .sort()   -- sorts an array
-// let numbers = [3, 1, 2];
-// numbers.sort();
-// console.log(numbers); // [1, 2, 3]
+//  let numbers = [3, 1, 2];
+//  numbers.sort(); 
+//  console.log(numbers); // [1, 2, 3]
+//  numbers.sort((a,b)=>b-a);
+//  console.log(numbers); // [ 3, 2, 1 ] -- descending if condition applied
 
 // Sorting Strings Alphabetically -- By default, .sort() sorts strings alphabetically.
 // let fruits = ["Banana", "Apple", "Mango"];
 // fruits.sort();
 // console.log(fruits); // ["Apple", "Banana", "Mango"]
 
+// we can sort objects keys and pairs also based on the condition
+// let userss = [
+//     {name: "Sachin", age:90},
+//     { name: "Alice", age: 25 },
+//     { name: "Bob", age: 30 },
+//    ];
+//   console.log(userss.sort((a,b)=>a.age - b.age));  
+// Output:-   [
+//     { name: 'Alice', age: 25 },
+//     { name: 'Bob', age: 30 },
+//     { name: 'Sachin', age: 90 }
+//   ]
+//   console.log(userss.sort((a,b)=>b.age - a.age));
+// Output:-  [
+//     { name: 'Sachin', age: 90 },
+//     { name: 'Bob', age: 30 },
+//     { name: 'Alice', age: 25 }
+//   ]
+  
 
 // Reversing
 // .reverse()  -- reverses the array order.
@@ -124,10 +145,12 @@ const myArr = new Array(1,2,3,56,98)
 // let combined = [1, 2]
 // console.log(combined.concat([3, 4])); // [1, 2, 3, 4]
 
-// let str1 = [2, 4, 6]
-// let str2 = [4, 6, 7]
-// console.log(str1.concat(str2));   // [ 2, 4, 6, 4, 6, 7 ]
-
+//  let arr1 = [2, 4, 6]
+//  let arr2 = [4, 6, 7]
+//  let arr3 = arr1.concat(arr2)
+//  console.log(arr3);   // [ 2, 4, 6, 4, 6, 7 ]
+//  console.log(arr1);  // [ 2, 4, 6 ]
+ 
 
 // .toString() - Convert Array to String
 // let arr = [1,2,3,4]
@@ -136,24 +159,24 @@ const myArr = new Array(1,2,3,56,98)
 
 // Spread Operator (...)   
 // [...arr]   -- creates a shallow copy of an array.
-// let original = [1, 2, 3];
-// let copy = [...original, 4, 5];
-// console.log(copy); // [1, 2, 3, 4, 5]
+//  let original = [1, 2, 3];
+//  let copy = [...original, 4, 5];
+//  console.log(copy); // [1, 2, 3, 4, 5]
 
 
-// let str = [1,4,5,6]
-// let str1 = [5,8,9]
-// let str2 = ["Sachin", "Chir"]
-// console.log([...str, ...str1, ...str2]);   // [ 1, 4, 5, 6, 5, 8, 9, 'Sachin', 'Chir' ] 
+//  let str = [1,4,5,6]
+//  let str1 = [5,8,9]
+//  let str2 = ["Sachin", "Chir"]
+//  console.log([...str, ...str1, ...str2]);   // [ 1, 4, 5, 6, 5, 8, 9, 'Sachin', 'Chir' ] 
 
-// console.log(...str, ...str1, ...str2);     // 1 4 5 6 5 8 9 Sachin Chir
-// console.log(str, str1, str2);              // [ 1, 4, 5, 6 ] [ 5, 8, 9 ] [ 'Sachin', 'Chir' ]
+//  console.log(...str, ...str1, ...str2);     // 1 4 5 6 5 8 9 Sachin Chir
+//  console.log(str, str1, str2);              // [ 1, 4, 5, 6 ] [ 5, 8, 9 ] [ 'Sachin', 'Chir' ]
 
 
 // . flat()
-// let first_array = [1, 2, 3, [4, 5, 6], 7, [8, 9, [4, 5]]]
-// let real_array = first_array.flat(Infinity)
-// console.log(real_array);     // [1, 2, 3, 4, 5, 6, 7, 8, 9, 4, 5]
+//  let first_array = [1, 2, 3, [4, 5, 6], 7, [8, 9, [4, 5]]]
+//  let real_array = first_array.flat(Infinity)
+//  console.log(real_array);     // [1, 2, 3, 4, 5, 6, 7, 8, 9, 4, 5]
 
 
 
@@ -208,14 +231,15 @@ const myArr = new Array(1,2,3,56,98)
 // console.log(doubled); // [2, 4, 6, 8]
 
 // Extracting Property Values from Objects
-// let users = [
-//     { name: "Alice", age: 25 },
-//     { name: "Bob", age: 30 },
-//   ];
+//  let users = [
+//      { name: "Alice", age: 25 },
+//      { name: "Bob", age: 30 },
+//    ];
   
-//   let names = users.map(user => user.name);
-//   console.log(names); // ["Alice", "Bob"]
-//   console.log(users.map(user => user.age));  // [ 25, 30 ]
+//    let names = users.map(user => user.name);
+//    console.log(names); // ["Alice", "Bob"]
+//    console.log(users.map(user => user.age));  // [ 25, 30 ]
+   
 
 // Converting Temperatures (Celsius to Fahrenheit)
 // let celsius = [0, 10, 20, 30];
