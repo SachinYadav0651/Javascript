@@ -59,7 +59,14 @@ const myArr = new Array(1,2,3,56,98)
 // .splice(start, deleteCount, newItem1, newItem2, ...) - extracts a part of an array and modifies the original array.
 // console.log(myArr);               // [ 1, 2, 3, 56, 98 ]
 // console.log(myArr.splice(1, 4));  // [ 2, 3, 56, 98 ]
-// console.log(myArr);               // [ 1 ]         
+// console.log(myArr);               // [ 1 ]     
+
+// let position = 2 
+// let newitem = 200
+// myArr.splice(position, 0, newitem)
+// console.log(myArr);// [ 1, 2, 200, 3, 56, 98 ] -- if you want to insert new element thn put deletCount = 0
+
+
 
 // console.log(strArr);              // [ 'Sachin', 'Chirantan', 'Yadav' ]
 // strArr.splice(1, 1, "Orange");
