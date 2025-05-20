@@ -1,0 +1,157 @@
+/* 🔹 1. Global Reset and Base Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* * selector applies to all elements.
+box-sizing: border-box ensures padding & border are included in the element’s total width/height.
+Resets margin and padding for consistency.
+Sets a clean, modern sans-serif font. */
+
+/* 🔹 2. Body Styling */
+
+body {
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+/* Applies a diagonal gradient background (from light teal to soft blue).
+Uses Flexbox to center the container horizontally and vertically.
+height: 100vh makes the body take full viewport height.
+Default text color is a dark gray for readability. */
+
+/* 🔹 3. Main Container (.container) */
+
+.container {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+/* White background with generous padding for space inside the card.
+Rounded corners (20px) give it a modern, friendly feel.
+Box-shadow adds depth, making the card appear elevated.
+max-width: 400px keeps the card from stretching too wide.
+transition makes it smoother if properties change on hover. */
+
+/* 🔹 4. Heading (h1) */
+
+h1 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #222;
+}
+/* Adds bottom margin to separate from inputs.
+Bigger font size to stand out.
+Dark gray text color for strong contrast. */
+
+/* 🔹 5. Input Groups */
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+/* Adds spacing between each input block.
+Aligns labels to the left for better form readability. */
+
+/* 🔹 6. Label */
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+/* Block display allows proper spacing and layout.
+Slightly bold text (600) makes it clear.
+Muted dark gray for a soft look. */
+
+/* 🔹 7. Input Fields */
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  transition: border 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #74ebd5;
+}
+/* Full width input box with padding for better touch targets.
+Light gray border with rounded corners.
+On focus: border color becomes teal-blue to show it's active. */
+
+/* 🔹 8. Button */
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #00b894;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #019875;
+}
+/* Green background button with white text = visually clear CTA (call-to-action).
+Rounded and bold with hover effect for interactivity.
+transition adds smooth color change on hover. */
+
+/* 🔹 9. Result Display */
+
+#result {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+/* This displays the BMI result.
+Font is slightly larger and bold.
+Padding and rounded corners make it consistent with inputs/buttons.
+Smooth transition so changes in color or content feel fluid. */
+
+/* 🔹 10. Responsive Design */
+
+@media (max-width: 500px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+/* On small screens (phones), reduce padding and font size so it fits better. */
+
+
+
+/* 🎯 Summary
+This CSS:
+
+Uses modern layout techniques (Flexbox)
+Looks friendly and professional
+Is responsive and works well on mobile
+Has consistent spacing and hierarchy
+Supports interactivity with hover/focus transitions */
