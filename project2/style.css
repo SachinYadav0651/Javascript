@@ -171,3 +171,7 @@ button:hover {
   }
 }
 
+#results  {
+  margin: 10px;
+  font-weight: bold;
+}
