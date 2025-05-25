@@ -1,0 +1,16 @@
+<!-- 1. ✅ Button Click Counter
+Goal: Count how many times a button is clicked. -->
+
+<button id="clickMe">Click Me</button>
+<p>You've clicked <span id="count"> 0 </span> times.</p>
+
+<script>
+  let count = 0;
+  const button = document.getElementById("clickMe");
+  const display = document.getElementById("count");
+
+  button.addEventListener("click", () => {
+    count++;
+    display.textContent = count;
+  });
+</script>

@@ -1,0 +1,15 @@
+<!-- 3. 🛑 Prevent Link Navigation
+Goal: Stop a link from navigating to another page.
+
+🧠 Events: click, preventDefault() -->
+
+<a href="https://example.com" id="link">Don't go here!</a>
+
+<script>
+  const link = document.getElementById("link");
+
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    alert("Navigation stopped.");
+  });
+</script>

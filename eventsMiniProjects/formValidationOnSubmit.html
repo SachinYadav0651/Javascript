@@ -1,0 +1,21 @@
+<!-- 6. 🧾 Form Validation on Submit
+Goal: Block submission if fields are empty.
+
+🧠 Events: submit, preventDefault() -->
+
+<form id="simpleForm">
+    <input type="text" id="username" placeholder="Username" />
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    const form = document.getElementById("simpleForm");
+    const username = document.getElementById("username");
+
+    form.addEventListener("submit", (e) => {
+        if (username.value.trim() === "") {
+            e.preventDefault();
+            alert("Username is required.");
+        }
+    });
+</script>

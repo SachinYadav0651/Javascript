@@ -1,0 +1,15 @@
+<!-- 5. 🧽 Clear Input on Blur
+Goal: Automatically clear an input field when it loses focus.
+
+🧠 Events: blur -->
+
+<input id="clearMe" placeholder="Type something..." />
+
+<script>
+  const input = document.getElementById("clearMe");
+
+  input.addEventListener("blur", () => {
+    input.value = "";
+  });
+</script>
+

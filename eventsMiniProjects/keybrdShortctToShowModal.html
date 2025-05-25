@@ -1,0 +1,15 @@
+<!-- 4. 🧠 Keyboard Shortcut to Show Modal
+Goal: Press "M" key to open a modal.
+
+🧠 Events: keydown -->
+
+<div id="modal" style="display:none;">This is a modal!</div>
+
+<script>
+    const modal = document.getElementById("modal")
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "m" || e.key === "M") {
+            modal.style.display = "block";
+        }
+    });
+</script>

@@ -1,0 +1,112 @@
+/* Reset some styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-container {
+  background: #2c2f4a;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 16px;
+  font-size: 28px;
+}
+
+.instructions {
+  font-size: 16px;
+  margin-bottom: 24px;
+  color: #cfcfcf;
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-bottom: 12px;
+}
+
+button {
+  background-color: #00d9ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #00bcd4;
+}
+
+.status {
+  margin-top: 20px;
+}
+
+#feedback {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+#remaining {
+  font-size: 14px;
+  color: #ccc;
+}
+
+#restartGame {
+  margin-top: 20px;
+  background-color: #ff6b6b;
+}
+
+#restartGame:hover {
+  background-color: #ff4b4b;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Existing styles stay the same... */
+
+.history {
+  margin-top: 20px;
+  text-align: left;
+  color: #ddd;
+}
+
+.history p {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+#guessHistory {
+  list-style: none;
+  padding-left: 0;
+  font-size: 14px;
+  color: #ccc;
+  max-height: 100px;
+  overflow-y: auto;
+}
+

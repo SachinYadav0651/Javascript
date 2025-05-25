@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+input.invalid {
+  border-color: red;
+}
+
+input.valid {
+  border-color: green;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
